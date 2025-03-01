@@ -1,51 +1,58 @@
-// i18n.js (Langues)
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-
 const resources = {
-  en: 
-    { 
-      translation: 
-      { 
-        home: 'Home', 
-        about: 'About', 
-        contact: 'Contact', 
-        footer: 'All rights reserved' 
-      } 
+  en: {
+    translation: {
+      home: 'Home',
+      about: 'About Us',
+      contact: 'Contact',
+      footer: 'All rights reserved',
+      welcomeMessage: 'Welcome to our internationalized website!',
+      aboutDescription: 'Learn more about our mission and services.',
+      contactDescription: 'Feel free to contact us at any time.',
+      footerMessage: 'Copyright 2025 - All rights reserved',
+      enableDarkMode: 'Enable Dark Mode',
+      disableDarkMode: 'Disable Dark Mode',
     },
-  fr: { 
-    translation: 
-    { 
-      home: 'Accueil', 
-      about: 'À Propos', 
-      contact: 'Contact', 
-      footer: 'Tous droits réservés' 
-    } 
   },
-  es: { 
-    translation: 
-    { 
-      home: 'Inicio', 
-      about: 'Sobre Nosotros', 
-      contact: 'Contacto', 
-      footer: 'Todos los derechos reservados' 
-    } 
+  fr: {
+    translation: {
+      home: 'Accueil',
+      about: 'À Propos',
+      contact: 'Contact',
+      footer: 'Tous droits réservés',
+      welcomeMessage: 'Bienvenue sur notre site internationalisé !',
+      aboutDescription: 'Découvrez notre mission et nos services.',
+      contactDescription: 'N\'hésitez pas à nous contacter à tout moment.',
+      footerMessage: 'Copyright 2025 - Tous droits réservés',
+      enableDarkMode: 'Activer le Mode Sombre',
+      disableDarkMode: 'Désactiver le Mode Sombre',
+    },
   },
-  de: { 
-    translation: 
-    { 
-      home: 'Startseite', 
-      about: 'Über uns', 
-      contact: 'Kontakt', 
-      footer: 'Alle Rechte vorbehalten' 
-    } 
+  es: {
+    translation: {
+      home: 'Inicio',
+      about: 'Sobre Nosotros',
+      contact: 'Contacto',
+      footer: 'Todos los derechos reservados',
+      welcomeMessage: '¡Bienvenido a nuestro sitio web internacionalizado!',
+      aboutDescription: 'Conoce más sobre nuestra misión y servicios.',
+      contactDescription: 'No dudes en contactarnos en cualquier momento.',
+      footerMessage: 'Copyright 2025 - Todos los derechos reservados',
+      enableDarkMode: 'Activar el Modo Oscuro',
+      disableDarkMode: 'Desactivar el Modo Oscuro',
+    },
+  },
+  de: {
+    translation: {
+      home: 'Startseite',
+      about: 'Über uns',
+      contact: 'Kontakt',
+      footer: 'Alle Rechte vorbehalten',
+      welcomeMessage: 'Willkommen auf unserer internationalisierten Website!',
+      aboutDescription: 'Erfahren Sie mehr über unsere Mission und Dienstleistungen.',
+      contactDescription: 'Kontaktieren Sie uns jederzeit gerne.',
+      footerMessage: 'Copyright 2025 - Alle Rechte vorbehalten',
+      enableDarkMode: 'Dunkelmodus aktivieren',
+      disableDarkMode: 'Dunkelmodus deaktivieren',
+    },
   },
 };
-
-i18n.use(initReactI18next).init({
-  resources,
-  lng: localStorage.getItem('language') || 'fr',
-  interpolation: { escapeValue: false },
-});
-
-export default i18n;
