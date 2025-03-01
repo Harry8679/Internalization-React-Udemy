@@ -59,19 +59,6 @@ export const ThemeProvider = ({ children }) => {
 
 export const useTheme = () => useContext(ThemeContext);
 
-
-// Footer.jsx
-function Footer() {
-  const { t } = useTranslation();
-  return (
-    <footer className="text-center p-4 bg-gray-200 dark:bg-gray-800">
-      {t('footer')}
-    </footer>
-  );
-}
-
-export default Footer;
-
 // Home.jsx
 function Home() {
   const { t } = useTranslation();
