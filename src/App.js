@@ -37,28 +37,6 @@ function App() {
 
 export default App;
 
-// ThemeContext.jsx (Gestion Dark/Light Mode)
-import { createContext, useState, useEffect, useContext } from 'react';
-
-const ThemeContext = createContext();
-
-export const ThemeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(localStorage.getItem('theme') === 'dark');
-
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', darkMode);
-    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
-  }, [darkMode]);
-
-  return (
-    <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
-      {children}
-    </ThemeContext.Provider>
-  );
-};
-
-export const useTheme = () => useContext(ThemeContext);
-
 // i18n.js (Langues)
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
