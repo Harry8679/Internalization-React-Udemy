@@ -59,13 +59,7 @@ export const ThemeProvider = ({ children }) => {
 
 export const useTheme = () => useContext(ThemeContext);
 
-// Home.jsx
-function Home() {
-  const { t } = useTranslation();
-  return <h1 className="text-3xl text-center">{t('home')}</h1>;
-}
 
-export default Home;
 
 // About.jsx
 function About() {
