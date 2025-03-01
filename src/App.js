@@ -12,8 +12,10 @@ import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import { ThemeProvider } from './context/ThemeContext';
+// import './i18n.js';
 import './i18n';
 import './index.css';
+import { i18n } from 'i18next';
 
 function App() {
   return (
