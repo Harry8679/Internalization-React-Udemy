@@ -1,33 +1,18 @@
+// i18n.js (Langues)
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-i18n.use(initReactI18next).init({
-  resources: {
-    en: {
-      translation: {
-        welcome: "Welcome to the App",
-        about: "About Us",
-        contact: "Contact Us",
-        login: "Login",
-        register: "Register",
-      },
-    },
-    fr: {
-      translation: {
-        welcome: "Bienvenue dans l'application",
-        about: "À propos de nous",
-        contact: "Nous contacter",
-        login: "Connexion",
-        register: "S'inscrire",
-      },
-    },
-  },
-  lng: 'en', // Langue par défaut
-  fallbackLng: 'en',
+const resources = {
+  en: { translation: { home: 'Home', about: 'About', contact: 'Contact', footer: 'All rights reserved' } },
+  fr: { translation: { home: 'Accueil', about: 'À Propos', contact: 'Contact', footer: 'Tous droits réservés' } },
+  es: { translation: { home: 'Inicio', about: 'Sobre Nosotros', contact: 'Contacto', footer: 'Todos los derechos reservados' } },
+  de: { translation: { home: 'Startseite', about: 'Über uns', contact: 'Kontakt', footer: 'Alle Rechte vorbehalten' } },
+};
 
-  interpolation: {
-    escapeValue: false,
-  },
+i18n.use(initReactI18next).init({
+  resources,
+  lng: localStorage.getItem('language') || 'fr',
+  interpolation: { escapeValue: false },
 });
 
 export default i18n;
