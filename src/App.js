@@ -149,26 +149,3 @@ i18n.use(initReactI18next).init({
 });
 
 export default i18n;
-
-// index.css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-// tailwind.config.js
-module.exports = {
-  darkMode: 'class',
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  theme: { extend: {} },
-  plugins: [],
-};
-
-// package.json
-"dependencies": {
-  "react": "^18.0.0",
-  "react-dom": "^18.0.0",
-  "react-router-dom": "^6.0.0",
-  "react-i18next": "^11.0.0",
-  "i18next": "^21.0.0",
-  "tailwindcss": "^3.0.0"
-}
