@@ -19,10 +19,10 @@ function Navbar() {
         <Link to="/contact" className="mr-4">{t('contact')}</Link>
       </div>
       <div>
-        <button onClick={() => changeLanguage('fr')} className="mr-2">FR</button>
-        <button onClick={() => changeLanguage('en')} className="mr-2">EN</button>
-        <button onClick={() => changeLanguage('es')} className="mr-2">ES</button>
-        <button onClick={() => changeLanguage('de')} className="mr-2">DE</button>
+        <button onClick={() => changeLanguage('fr')} className="mr-2">FR 🇫🇷</button>
+        <button onClick={() => changeLanguage('en')} className="mr-2">EN 🇺🇸</button>
+        <button onClick={() => changeLanguage('es')} className="mr-2">ES 🇪🇸</button>
+        <button onClick={() => changeLanguage('de')} className="mr-2">DE 🇩🇪</button>
         <button onClick={() => setDarkMode(!darkMode)}>
           {darkMode ? '☀️' : '🌙'}
         </button>

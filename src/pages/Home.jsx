@@ -11,7 +11,7 @@ function Home() {
   }, [t]);
 
   return (
-    <div className="text-center p-10 text-black dark:text-white bg-white dark:bg-gray-900">
+    <div className="text-center p-10 text-black dark:text-white bg-white dark:bg-gray-900 rounded-2xl shadow-lg mx-auto max-w-6xl">
       <h1 className="text-5xl font-bold mb-6 text-black dark:text-white">{t('home')}</h1>
       
       <p className="text-lg mb-8 text-black dark:text-white">{t('welcomeMessage')}</p>
