@@ -32,6 +32,8 @@ function Navbar() {
         <Link to="/contact" className="mr-4">{t('contact')}</Link>
       </div>
       <div className="flex items-center space-x-4">
+        <Link to="/register" className="text-black dark:text-white hover:underline">{t('register')}</Link>
+        <Link to="/login" className="text-black dark:text-white hover:underline">{t('login')}</Link>
         <div className="relative">
           <button
             className="px-4 py-2 bg-gray-500 dark:bg-gray-700 rounded text-white flex items-center gap-2"

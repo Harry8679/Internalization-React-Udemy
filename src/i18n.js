@@ -14,7 +14,12 @@ const resources = {
         aboutDescription: 'Learn more about our mission and services.',
         contactDescription: 'Feel free to contact us at any time.',
         footerMessage: 'Copyright 2025 - All rights reserved',
-        welcomeMessage: 'Welcome to our app'
+        welcomeMessage: 'Welcome to our app',
+        login: 'Login',
+        register: 'Register',
+        username: 'Username',
+        email: 'Email',
+        password: 'Password',
       } 
     },
   fr: { 
@@ -27,7 +32,12 @@ const resources = {
       aboutDescription: 'Découvrez notre mission et nos services.',
       contactDescription: 'N\'hésitez pas à nous contacter à tout moment.',
       footerMessage: 'Copyright 2025 - Tous droits réservés',
-      welcomeMessage: 'Bienvenue sur notre application'
+      welcomeMessage: 'Bienvenue sur notre application',
+      login: 'Connexion',
+      register: 'Inscription',
+      username: 'Nom d\'utilisateur',
+      email: 'Email',
+      password: 'Mot de passe',
     } 
   },
   es: { 
@@ -40,7 +50,12 @@ const resources = {
       aboutDescription: 'Conoce más sobre nuestra misión y servicios.',
       contactDescription: 'No dudes en contactarnos en cualquier momento.',
       footerMessage: 'Copyright 2025 - Todos los derechos reservados',
-      welcomeMessage: 'Bienvenido a nuestra aplicación'
+      welcomeMessage: 'Bienvenido a nuestra aplicación',
+      login: 'Conexión',
+      register: 'Registro',
+      username: 'Nombre de usuario',
+      email: 'Correo electrónico',
+      password: 'Contraseña',
     } 
   },
   de: { 
@@ -53,7 +68,12 @@ const resources = {
       aboutDescription: 'Erfahren Sie mehr über unsere Mission und Dienstleistungen.',
       contactDescription: 'Kontaktieren Sie uns jederzeit gerne.',
       footerMessage: 'Copyright 2025 - Alle Rechte vorbehalten',
-      welcomeMessage: 'Willkommen in unserer App'
+      welcomeMessage: 'Willkommen in unserer App',
+      login: 'Verbindung',
+      register: 'Anmeldung',
+      username: 'Benutzername',
+      email: 'E-mail',
+      password: 'Passwort',
     } 
   },
 };
