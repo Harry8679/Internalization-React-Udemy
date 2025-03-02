@@ -24,21 +24,22 @@ function Home() {
       </button>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-        <div className="p-6 shadow-lg rounded-lg bg-gray-100 dark:bg-gray-800">
+        <div className="p-6 shadow-lg rounded-lg bg-gray-100 dark:bg-gray-800 text-black dark:text-white">
           <h2 className="text-2xl font-semibold mb-3">{t('about')}</h2>
           <p>{t('aboutDescription')}</p>
         </div>
 
-        <div className="p-6 shadow-lg rounded-lg bg-gray-100 dark:bg-gray-800">
+        <div className="p-6 shadow-lg rounded-lg bg-gray-100 dark:bg-gray-800 text-black dark:text-white">
           <h2 className="text-2xl font-semibold mb-3">{t('contact')}</h2>
           <p>{t('contactDescription')}</p>
         </div>
 
-        <div className="p-6 shadow-lg rounded-lg bg-gray-100 dark:bg-gray-800">
+        <div className="p-6 shadow-lg rounded-lg bg-gray-100 dark:bg-gray-800 text-black dark:text-white">
           <h2 className="text-2xl font-semibold mb-3">{t('footer')}</h2>
           <p>{t('footerMessage')}</p>
         </div>
       </div>
+
     </div>
   );
 }

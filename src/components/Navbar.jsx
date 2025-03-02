@@ -1,4 +1,3 @@
-// Navbar.jsx
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '../context/ThemeContext';
@@ -13,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="p-4 bg-gray-200 dark:bg-gray-800 text-center flex justify-between">
+    <nav className="p-4 bg-gray-200 dark:bg-gray-900 text-black dark:text-white flex justify-between">
       <div>
         <Link to="/" className="mr-4">{t('home')}</Link>
         <Link to="/about" className="mr-4">{t('about')}</Link>

@@ -1,4 +1,13 @@
-.App {
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: #121212;
+  color: white;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +44,4 @@ font
   to {
     transform: rotate(360deg);
   }
-}
+} */
