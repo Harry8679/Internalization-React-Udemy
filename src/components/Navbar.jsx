@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '../context/ThemeContext';
 import { useState } from 'react';
+import { FaChevronDown } from 'react-icons/fa';
 
 function Navbar() {
   const { t, i18n } = useTranslation();
@@ -32,15 +33,16 @@ function Navbar() {
       </div>
       <div className="relative">
         <button
-          className="px-4 py-2 bg-gray-500 dark:bg-gray-700 rounded text-white"
+          className="px-4 py-2 bg-gray-500 dark:bg-gray-700 rounded text-white flex items-center gap-2"
           onClick={() => setShowDropdown(!showDropdown)}
         >
           {languageOptions.find(lang => lang.code === selectedLanguage)?.flag} {t('language')}
+          <FaChevronDown className="text-sm" />
         </button>
         {showDropdown && (
           <ul className="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 shadow-md rounded-md overflow-hidden">
             {languageOptions.map(({ code, label, flag }) => (
-              <li key={code} className="p-2 hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer" onClick={() => changeLanguage(code)}>
+              <li key={code} className="p-2 hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer flex items-center gap-2" onClick={() => changeLanguage(code)}>
                 {flag} {label}
               </li>
             ))}
